@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>My Site</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      perc {color: brown}
+    </style>
 </head>
 <body>
   <div class='header'>
@@ -28,43 +31,62 @@
   <div class='statsflex'>
     <div class='section1'>
       <div class='estats' id='hap'>
-      Happiness: 10%
+      Happiness: <perc>10%</perc>
       </div>
       <div class='estats' id='stress'>
-      Stress: 60%
+      Stress: <perc>60%</perc>
       </div>
-      <div class='estats' id='sleep'>
-      Sleepyness: 70%
+      <div class='estats' id='sleepy'>
+      Sleepyness: <perc>60%</perc>
       </div>
       <div class='estats' id='hung'>
-      Hunger: 10%
+      Hunger: <perc>10%</perc>
       </div>
     </div>
     <div class='section2'>
-      <div class='name'>
+      <div id='name' class='name'>
       Bearnaby
       </div>
-      <image class='selfie' src='https://media.istockphoto.com/id/585604946/photo/smiling-brown-bear.jpg?b=1&s=612x612&w=0&k=20&c=83m3S1ntfUxgGyxYlnBZ3AG8YIPG6a4SEteGTg2Ltu8='></image>
+      <image class='selfie1' src='https://media.istockphoto.com/id/585604946/photo/smiling-brown-bear.jpg?b=1&s=612x612&w=0&k=20&c=83m3S1ntfUxgGyxYlnBZ3AG8YIPG6a4SEteGTg2Ltu8='></image>
+      <div class='reset' onclick='randomize()'>
+      Reroll stats
+      </div>
       </div>
     <div class='section3'>
       <div class='estats' id='strength'>
-      Strength: 20pts
+      Strength: <perc>20pts</perc>
       </div>
       <div class='estats' id='speed'>
-      Speed: 50pts
+      Speed: <perc>50pts</perc>
       </div>
       <div class='estats' id='smarts'>
-      Smarts: 5pts
+      Smarts: <perc>5pts</perc>
       </div>
       <div class='estats' id='weight'>
-      Weight: 800lbs
+      Weight: <perc>800lbs</perc>
       </div>
     </div>
   </div>
   </div>
   
   <div  id='page3' class='page3'>
-  Arena goes here
+    <div class="area">
+      <div class="side">
+        <div id='name1' class='bearname'></div>
+        <image class='selfie2' src='https://media.istockphoto.com/id/585604946/photo/smiling-brown-bear.jpg?b=1&s=612x612&w=0&k=20&c=83m3S1ntfUxgGyxYlnBZ3AG8YIPG6a4SEteGTg2Ltu8='></image>
+        <div id='fight' class='fight' onclick='fight()'>
+          FIGHT!
+        </div>
+      </div>
+      <div class='mid'>V.S.</div>
+      <div class="side">
+        <div id='enemyname' class='enemyname'></div>
+        <image id='enemy' class='enemy' src=''></image>
+        <div id="rating" class='rating'>rating</div>
+        <div id="x" class="x">X</div>
+      </div>
+      <div class="find" onclick='find()'>Find opponent</div>
+    </div>
   </div>
   
   <div  id='page4' class='page4'>
@@ -72,7 +94,10 @@
   </div>
   
   <div  id='page5' class='page5'>
-  Adventure goes here
+    <image id='selfie4' class='selfie4' src='https://media.istockphoto.com/id/585604946/photo/smiling-brown-bear.jpg?b=1&s=612x612&w=0&k=20&c=83m3S1ntfUxgGyxYlnBZ3AG8YIPG6a4SEteGTg2Ltu8='></image>
+    <div id='send' class='send' onclick='send()'>
+    Send on adventure!
+    </div>
   </div>
   
   <div  id='page6' class='page6'>
