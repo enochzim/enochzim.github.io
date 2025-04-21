@@ -17,7 +17,7 @@ html {
   text-align: center;
   margin-left: 1%;
   margin-right: 1%;
-  font-size: 18px;
+  font-size: 2.6vw;
 }
 
 .title:hover{
@@ -32,6 +32,7 @@ html {
   text-align: center;
   margin-left: 1%;
   margin-right: 1%;
+  font-size: 2.5vw;
 }
 
 .page:hover{
@@ -49,7 +50,7 @@ html {
 }
 
 .welcome{
-  font-size: 80px;
+  font-size: 12vw;
   text-align: center;
 }
 
@@ -64,7 +65,7 @@ html {
 
 .name{
   text-align: center;
-  font-size: 40px;
+  font-size: 5vw;
   font-weight: bold;
   /* -webkit-text-stroke: 2px saddlebrown; */
 }
@@ -91,7 +92,7 @@ html {
   margin-left: 15%;
   margin-bottom: 10%;
   margin-right: 10%;
-  font-size: 130%;
+  font-size: 2.7vw;
 }
 
 .section2{
@@ -119,6 +120,7 @@ html {
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 5%;
+  font-size: 2.5vw;
 }
 
 .reset:hover{
@@ -146,17 +148,18 @@ html {
   text-align: center;
   margin-top: 15%;
   font-weight: bold;
-  font-size: 200%;
+  font-size: 6vw;
 }
 
 .find{
   position: absolute;
   top: 60%;
-  left: 43%;
+  left: 42%;
   padding: 1%;
   background-color: pink;
   border: solid;
   font-weight: bold;
+  font-size: 2.2vw;
 }
 
 .find:hover{
@@ -173,7 +176,7 @@ html {
 .bearname{
   font-weight: bold;
   padding: 2%;
-  font-size: 200%;
+  font-size: 5vw;
 }
 
 .fight{
@@ -182,6 +185,7 @@ html {
   margin-top: 3%;
   margin-left: 35%;
   margin-right: 35%;
+  font-size: 2.5vw;
 }
 
 .fight:hover{
@@ -203,7 +207,7 @@ html {
 
 .enemyname{
   display: none;
-  font-size: 200%;
+  font-size: 5vw;
   font-weight: bold;
   text-align: center;
   padding: 2%;
@@ -211,7 +215,7 @@ html {
 
 .rating{
   display: none;
-  font-size: 150%;
+  font-size: 4vw;
   font-weight: bold;
   text-align: center;
   padding: 3%;
@@ -220,7 +224,7 @@ html {
 .x{
   color: red;
   display: none;
-  font-size: 1400%;
+  font-size: 33vw;
   position: absolute;
   top: 17%;
   left: 67%;
@@ -229,6 +233,24 @@ html {
 
 .page4{
   display: none;
+}
+
+.contain{
+  display: flex;
+}
+
+.leftside{
+  flex: 1;
+}
+
+.rightside{
+  flex: 1;
+}
+
+.name2{
+  text-align: center;
+  font-size: 5vw;
+  font-weight: bold;
 }
 
 .page5{
@@ -248,7 +270,7 @@ html {
   margin-left: 37%;
   margin-right: 37%;
   padding: 0.5%;
-  font-size: 130%;
+  font-size: 3vw;
   margin-top: 1%;
   border: solid saddlebrown 2px;
   background-color: moccasin;
