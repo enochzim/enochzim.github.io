@@ -48,26 +48,6 @@ html {
   display: block;
 }
 
-.page2{
-  display: none;
-}
-
-.page3{
-  display: none;
-}
-
-.page4{
-  display: none;
-}
-
-.page5{
-  display: none;
-}
-
-.page6{
-  display: none;
-}
-
 .welcome{
   font-size: 80px;
   text-align: center;
@@ -78,15 +58,15 @@ html {
   margin-left: 30%;
 }
 
-.selfie{
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 10%;
+.page2{
+  display: none;
 }
 
 .name{
   text-align: center;
   font-size: 40px;
+  font-weight: bold;
+  /* -webkit-text-stroke: 2px saddlebrown; */
 }
 
 .statsflex{
@@ -108,7 +88,10 @@ html {
 .estats{
   flex: 1;
   padding: 5%;
-  margin-left: 20%;
+  margin-left: 15%;
+  margin-bottom: 10%;
+  margin-right: 10%;
+  font-size: 130%;
 }
 
 .section2{
@@ -120,4 +103,195 @@ html {
   display: flex;
   flex-direction: column;
   font-weight: bold;
+}
+
+.selfie1{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  border-radius: 50%;
+  border: solid brown;
+}
+
+.reset{
+  text-align: center;
+  border: solid;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+}
+
+.reset:hover{
+  background-color: bisque;
+  cursor: pointer;
+}
+
+.page3{
+  display: none;
+}
+
+.area{
+  display: flex;
+}
+
+.side{
+  flex: 8;
+  padding: 0.5%;
+  text-align: center;
+}
+
+.mid{
+  flex: 2;
+  padding: 0.5%;
+  text-align: center;
+  margin-top: 15%;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.find{
+  position: absolute;
+  top: 60%;
+  left: 43%;
+  padding: 1%;
+  background-color: pink;
+  border: solid;
+  font-weight: bold;
+}
+
+.find:hover{
+  background-color: salmon;
+  cursor: pointer;
+}
+
+.selfie2{
+  width: 50%;
+  border-radius: 50%;
+  border: solid brown;
+}
+
+.bearname{
+  font-weight: bold;
+  padding: 2%;
+  font-size: 200%;
+}
+
+.fight{
+  display: none;
+  border: solid;
+  margin-top: 3%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.fight:hover{
+  background: bisque;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.enemy{
+  width: 70%;
+  display: none;
+  margin-left: 25%;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  width: 50%;
+  border: solid;
+}
+
+.enemyname{
+  display: none;
+  font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+  padding: 2%;
+}
+
+.rating{
+  display: none;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  padding: 3%;
+}
+
+.x{
+  color: red;
+  display: none;
+  font-size: 1400%;
+  position: absolute;
+  top: 17%;
+  left: 67%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page4{
+  display: none;
+}
+
+.page5{
+  display: none;
+}
+
+.selfie4{
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 2%;
+  border-radius: 50%;
+}
+
+.send{
+  text-align: center;
+  border: solid 2px;
+  margin-left: 37%;
+  margin-right: 37%;
+  padding: 0.5%;
+  font-size: 130%;
+  margin-top: 1%;
+  border: solid saddlebrown 2px;
+  background-color: moccasin;
+}
+
+.send:hover{
+  background-color: burlywood;
+  border: solid black 2px;
+  cursor: pointer;
+}
+
+.page6{
+  display: none;
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg)
+  }
+  25%{
+    transform: rotate(90deg)
+  }
+  50%{
+    transform: rotate(180deg)
+  }
+  75%{
+    transform: rotate(270deg)
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes shake{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(1deg);
+    transform: translate(0.5px, 1px);
+  }
+  75%{
+    transform: rotate(1deg);
+    transform: translate(0.5px, -0.5px);
+  }
 }
