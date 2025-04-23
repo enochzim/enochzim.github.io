@@ -245,6 +245,34 @@ html {
 
 .rightside{
   flex: 1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3vw;
+  margin-top: 10%;
+}
+
+.text{
+  border: solid;
+  background-color: bisque;
+  text-align: center;
+  padding: 1%;
+  font-weight: bold;
+  margin-top: 2%;
+  font-size: 4vh;
+}
+
+.setname{
+  border: solid ;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 2%;
+  font-size: 6vh;
+  background-color: burlywood;
+}
+
+.setname:hover{
+  cursor: pointer;
+  background-color: bisque;
 }
 
 .name2{
@@ -284,6 +312,14 @@ html {
 
 .page6{
   display: none;
+}
+
+.hat{
+  position: relative;
+  height: 17vh;
+  left: -19%;
+  top: -27vh;
+  transform: rotate(10deg);
 }
 
 @keyframes spin{
