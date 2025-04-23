@@ -47,6 +47,7 @@ html {
 
 .page1{
   display: block;
+  position: relative;
 }
 
 .welcome{
@@ -59,8 +60,17 @@ html {
   margin-left: 30%;
 }
 
+.hat{
+  position: absolute;
+  width: 9%;
+  left: 52%;
+  bottom: 39%;
+  transform: rotate(10deg);
+}
+
 .page2{
   display: none;
+  position: relative;
 }
 
 .name{
@@ -126,6 +136,14 @@ html {
 .reset:hover{
   background-color: bisque;
   cursor: pointer;
+}
+
+.hat1{
+  position: absolute;
+  width: 14%;
+  left: 45%;
+  transform: translateY(20%) rotate(10deg);
+  z-index: 1;
 }
 
 .page3{
@@ -312,14 +330,6 @@ html {
 
 .page6{
   display: none;
-}
-
-.hat{
-  position: relative;
-  height: 17vh;
-  left: -19%;
-  top: -27vh;
-  transform: rotate(10deg);
 }
 
 @keyframes spin{
