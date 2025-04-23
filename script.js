@@ -11,7 +11,6 @@ enemypic = '';
 enemypoints = 0;
 
 function showit(var1) {
-	console.log(var1)
   document.getElementById('page1').style.display = 'none';
   document.getElementById('page2').style.display = 'none';
   document.getElementById('page3').style.display = 'none';
@@ -20,14 +19,20 @@ function showit(var1) {
   document.getElementById('page6').style.display = 'none';
   
   document.getElementById(var1).style.display = 'block';
+  
+  
 }
 
 async function send(){
-	document.getElementById('selfie4').style.animation = 'spin 1s linear 2';
+	document.getElementById('selfie4').style.animation = 'spin 1s linear infinite';
   document.getElementById('send').innerText = 'Adventuring...';
+  document.getElementById('send').style.cursor = 'wait';
+  document.getElementById('send').onclick = null;
   await sleep(2000);
   document.getElementById('send').innerText = 'Send on adventure!';
   document.getElementById('selfie4').style.animation = 'none';
+  document.getElementById('send').onclick = send;
+  document.getElementById('send').style.cursor = 'pointer';
   randstatboost();
 }
 
@@ -96,8 +101,12 @@ function setvars(){
 }
 
 function setname(name){
+	if (document.getElementById('text').value != ''){
+		name = document.getElementById('text').value
+  }
 	document.getElementById('name').innerText=name;
   document.getElementById('name1').innerText=name;
+  document.getElementById('name2').innerText=name;
 }
 
 function randimage(){
@@ -169,10 +178,10 @@ function fight(){
   	document.getElementById('x').style.display = 'block';
   }
   else{
+  	document.getElementById('x').style.left = '67%';
     document.getElementById('x').style.display = 'block';
   }
-  console.log(total);
 }
 
-setname('Bearnaby');
+setname('Beary');
 randomize();
