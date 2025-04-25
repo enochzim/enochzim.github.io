@@ -109,12 +109,15 @@ function setvars(){
 function setname(name){
 	if (document.getElementById('text').value != ''){
 		name = document.getElementById('text').value;
-    document.getElementById('name').innerText=name;
-  	document.getElementById('name1').innerText=name;
-    document.getElementById('name2').innerText=name;
-    document.getElementById('name3').innerText=name;
-    document.getElementById('text').value = '';
   }
+  else{
+  	name = 'Beary';
+  }
+  document.getElementById('name').innerText=name;
+  document.getElementById('name1').innerText=name;
+  document.getElementById('name2').innerText=name;
+  document.getElementById('name3').innerText=name;
+  document.getElementById('text').value = '';
 }
 
 function randimage(){
@@ -151,6 +154,7 @@ function randname(){
 }
 
 function find(){
+	document.getElementById('secret').style.height = '15vh';
 	document.getElementById('x').style.display = 'none';
 	randimage();
   randname();
