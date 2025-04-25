@@ -42,13 +42,13 @@ async function send(){
 
 function randstatboost(){
 	hap += Math.floor(Math.random() * 5);
-	stress -= Math.floor(Math.random() * 20);
-	sleepy += Math.floor(Math.random() * 20);
-	hunger += Math.floor(Math.random() * 4);
-	strength += Math.floor(Math.random() * 4);
-	speed += Math.floor(Math.random() * 4);
-	smarts += Math.floor(Math.random() * 4);
-	weight += Math.floor(Math.random() * 16);
+	stress -= Math.floor(Math.random() * 21);
+	sleepy += Math.floor(Math.random() * 21);
+	hunger += Math.floor(Math.random() * 11);
+	strength += Math.floor(Math.random() * 11);
+	speed += Math.floor(Math.random() * 11);
+	smarts += Math.floor(Math.random() * 11);
+	weight += Math.floor(Math.random() * 26);
   setvars();
 }
 
@@ -75,8 +75,14 @@ function setvars(){
   if (sleepy>100){
     sleepy=100;
   }
+  if (sleepy<0){
+  	sleepy =0;
+  }
   if (hunger>100){
     hunger=100;
+  }
+  if (hunger<0){
+    hunger=0;
   }
   if (strength>100){
     strength=100;
@@ -102,11 +108,13 @@ function setvars(){
 
 function setname(name){
 	if (document.getElementById('text').value != ''){
-		name = document.getElementById('text').value
+		name = document.getElementById('text').value;
+    document.getElementById('name').innerText=name;
+  	document.getElementById('name1').innerText=name;
+    document.getElementById('name2').innerText=name;
+    document.getElementById('name3').innerText=name;
+    document.getElementById('text').value = '';
   }
-	document.getElementById('name').innerText=name;
-  document.getElementById('name1').innerText=name;
-  document.getElementById('name2').innerText=name;
 }
 
 function randimage(){
@@ -180,6 +188,58 @@ function fight(){
   else{
   	document.getElementById('x').style.left = '67%';
     document.getElementById('x').style.display = 'block';
+  }
+}
+
+async function nap(){
+	document.getElementById('selfie6').style.animation = 'nap 3s linear infinite';
+  document.getElementById('slep').style.cursor = 'wait';
+  document.getElementById('slep').onclick = null;
+  document.getElementById('hat5').style.display = 'none';
+  await sleep(3000);
+  document.getElementById('selfie6').style.animation = 'none';
+  document.getElementById('slep').onclick = nap;
+  document.getElementById('slep').style.cursor = 'pointer';
+  givehat()
+	sleepy -= 70;
+  hap += 5;
+  stress -= 8;
+  setvars();
+}
+
+async function eat(){
+	document.getElementById('selfie6').style.animation = 'eat 0.4s ease-in-out infinite';
+  document.getElementById('eat').style.cursor = 'wait';
+  document.getElementById('eat').onclick = null;
+  document.getElementById('hat5').style.display = 'none';
+  await sleep(1200);
+  document.getElementById('selfie6').style.animation = 'none';
+  document.getElementById('eat').onclick = eat;
+  document.getElementById('eat').style.cursor = 'pointer';
+  givehat()
+	hunger = 0;
+  hap += 5;
+  stress -= 4;
+  weight += Math.floor(Math.random()*12+1);
+  setvars();
+}
+
+function givehat(){
+	if (document.getElementById('checkbox').checked){
+  	document.getElementById('hat').style.display = 'block';
+    document.getElementById('hat1').style.display = 'block';
+    document.getElementById('hat2').style.display = 'block';
+    document.getElementById('hat3').style.display = 'block';
+    document.getElementById('hat4').style.display = 'block';
+    document.getElementById('hat5').style.display = 'block';
+  }
+  else{
+  	document.getElementById('hat').style.display = 'none';
+    document.getElementById('hat1').style.display = 'none';
+    document.getElementById('hat2').style.display = 'none';
+    document.getElementById('hat3').style.display = 'none';
+    document.getElementById('hat4').style.display = 'none';
+    document.getElementById('hat5').style.display = 'none';
   }
 }
 
