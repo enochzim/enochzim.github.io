@@ -72,6 +72,7 @@
   </div>
   
   <div  id='page3' class='page3'>
+  <image src='https://cdn-icons-png.flaticon.com/512/6506/6506403.png' id="hat2" class="hat2"></image>
     <div class="area">
       <div class="side">
         <div id='name1' class='bearname'></div>
@@ -92,9 +93,10 @@
   </div>
   
   <div  id='page4' class='page4'>
+  <image src='https://cdn-icons-png.flaticon.com/512/6506/6506403.png' id="hat3" class="hat3"></image>
   <div class='contain'>
     <div class="leftside">Hat:
-      <input type='checkbox'>
+      <input id='checkbox' type='checkbox' onclick='givehat()' class='check'>
     </div>
     <div class="section2">
       <div id='name2' class='name2'>
@@ -103,7 +105,7 @@
       <image class='selfie1' src='https://media.istockphoto.com/id/585604946/photo/smiling-brown-bear.jpg?b=1&s=612x612&w=0&k=20&c=83m3S1ntfUxgGyxYlnBZ3AG8YIPG6a4SEteGTg2Ltu8='></image>
     </div>
     <div class="rightside">
-      Change name: <input id='text' type="text" class='text'>
+      <input id='text' type="text" class='text' placeholder='Change name: '>
       <div class="setname"onclick="setname('')">
         Set
       </div>
@@ -112,6 +114,7 @@
   </div>
   
   <div  id='page5' class='page5'>
+  <image src='https://cdn-icons-png.flaticon.com/512/6506/6506403.png' id="hat4" class="hat4"></image>
     <image id='selfie4' class='selfie4' src='https://media.istockphoto.com/id/585604946/photo/smiling-brown-bear.jpg?b=1&s=612x612&w=0&k=20&c=83m3S1ntfUxgGyxYlnBZ3AG8YIPG6a4SEteGTg2Ltu8='></image>
     <div id='send' class='send' onclick='send()'>
     Send on adventure!
@@ -119,7 +122,25 @@
   </div>
   
   <div  id='page6' class='page6'>
-  Training goes here
+  <image src='https://cdn-icons-png.flaticon.com/512/6506/6506403.png' id="hat5" class="hat5"></image>
+    <div class="contain">
+      <div class="leftside2">
+        <button onclick='nap()' class='setname' id='slep'>
+         Sleep
+        </button>
+      </div>
+      <div class="section2">
+      <div id='name3' class='name2'>
+      Bearnaby
+      </div>
+      <image id='selfie6' class='selfie6' src='https://media.istockphoto.com/id/585604946/photo/smiling-brown-bear.jpg?b=1&s=612x612&w=0&k=20&c=83m3S1ntfUxgGyxYlnBZ3AG8YIPG6a4SEteGTg2Ltu8='></image>
+    </div>
+      <div class="rightside2">
+        <button onclick='eat()' class='setname' id='eat'>
+         eat
+        </button>
+      </div>
+    </div>
   </div>
   
 <script src="script.js"></script>
