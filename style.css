@@ -78,7 +78,6 @@ html {
   text-align: center;
   font-size: 5vw;
   font-weight: bold;
-  /* -webkit-text-stroke: 2px saddlebrown; */
 }
 
 .statsflex{
@@ -122,7 +121,7 @@ html {
   margin-left: 10%;
   margin-top: 5%;
   border-radius: 50%;
-  border: solid brown;
+  border: solid brown 0.4vw;
 }
 
 .reset{
@@ -183,11 +182,11 @@ html {
 
 .find{
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 42%;
   padding: 1%;
   background-color: pink;
-  border: solid;
+  border: solid 0.4vw;
   font-weight: bold;
   font-size: 2.2vw;
 }
@@ -197,10 +196,14 @@ html {
   cursor: pointer;
 }
 
+.secret{
+  height: 24vh;
+}
+
 .selfie2{
   width: 50%;
   border-radius: 50%;
-  border: solid brown;
+  border: solid brown 0.4vw;
 }
 
 .bearname{
@@ -211,7 +214,7 @@ html {
 
 .fight{
   display: none;
-  border: solid;
+  border: solid 0.4vw;
   margin-top: 3%;
   margin-left: 35%;
   margin-right: 35%;
@@ -232,7 +235,7 @@ html {
   object-fit: cover;
   aspect-ratio: 1/1;
   width: 50%;
-  border: solid;
+  border: solid 0.4vw;
 }
 
 .enemyname{
@@ -302,7 +305,7 @@ html {
 }
 
 .text{
-  border: solid;
+  border: solid 0.4vw;
   background-color: bisque;
   text-align: center;
   padding: 1%;
@@ -312,7 +315,7 @@ html {
 }
 
 .setname{
-  border: solid ;
+  border: solid 0.4vw;
   margin-left: 33%;
   margin-right: 33%;
   margin-top: 2%;
@@ -351,24 +354,24 @@ html {
   margin-left: 35%;
   margin-top: 2%;
   border-radius: 50%;
-  border: solid brown 2px;
+  border: solid brown 0.4vw;
 }
 
 .send{
   text-align: center;
-  border: solid 2px;
+  border: solid 0.4vw;
   margin-left: 37%;
   margin-right: 37%;
   padding: 0.5%;
   font-size: 3vw;
   margin-top: 1%;
-  border: solid saddlebrown 2px;
+  border: solid saddlebrown 0.4vw;
   background-color: moccasin;
 }
 
 .send:hover{
   background-color: burlywood;
-  border: solid black 2px;
+  border: solid black 0.4vw;
   cursor: pointer;
 }
 
@@ -392,7 +395,7 @@ html {
   margin-left: 10%;
   margin-top: 5%;
   border-radius: 50%;
-  border: solid brown;
+  border: solid brown 0.4vw;
 }
 
 .leftside2{
